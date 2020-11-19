@@ -1,12 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-function Button(){
-    const [counter, setCounter] = useState(5);
+function Button(props){
 
-    const handleClick = () => {setCounter(counter * 2)};
+    const handleClick = () => props.onClickFunction(props.increment);
 
     return <button className="btn btn-primary" onClick={handleClick}>
-        { counter }
+        + {props.increment}
     </button>;
 }
 

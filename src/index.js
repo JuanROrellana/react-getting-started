@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Button from "./Button";
 
 ReactDOM.render(
-    //JSX code
-    <App />,
-    //JS code before babel compilation
-    // React.createElement(App),
+    <App/>,
     document.getElementById('root')
 );
